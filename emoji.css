@@ -1,0 +1,76 @@
+/*
+body{
+    background-color:skyblue;
+}
+div{
+    border: 1px;
+    height:150px;
+    background-color:skyblue;
+    margin: 100px 0 100px 0;
+    justify-content: space-between;
+
+
+}
+.container{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    background-color: skyblue;
+    
+
+
+    
+}
+.item{
+    width:200px;
+    border:2px;
+    border-color: black;
+    color:white;
+    font-size:xx-large ;
+    font-weight: bold;
+    text-align: center;
+    line-height: 150px;
+    background-color:cadetblue; 
+}
+*/ /*   For grid.html*/
+
+
+.grid-container{
+    display:grid;
+    width: 300px;
+    height: 300px;
+    grid-template-columns: 100px 100px 100px ;
+    grid-template-rows:100px 100px 100px;
+    background-color: grey;
+}
+.grid-item{
+    transition:width .5s, height .5s, line-height .5s;
+    width: 100px;
+    height:100px;
+    line-height: 50px;
+    border:2px;
+    text-align: center;
+    background-color: darkolivegreen;
+    
+}
+.grid-item:hover{
+    width:125px;
+    height:120px;
+    line-height:60px;
+    background-color: darkslategrey;
+
+}
+
+div{
+    width:100px;
+    height:100px;
+    background-color: red;
+    animation-name:example;
+    animation-duration: 10s;
+}
+@keyframes example{
+    0%{background-color: red;}
+    25%{background-color: yellow;}
+    50%{background-color: blue;}
+    75%{background-color: green;}
+}
